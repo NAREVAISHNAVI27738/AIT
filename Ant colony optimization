@@ -1,0 +1,22 @@
+R1 = 30
+R2 = 70
+Total = R1 + R2
+P1 = R1 / Total
+P2 = R2 / Total
+percentage1 = P1 * 100
+percentage2 = P2 * 100
+
+
+print(f"Path 1 = {R1}")
+print(f"Path 2 = {R2}")
+print(f"Path 1 probability = {percentage1:.2f}%")
+print(f"Path 2 probability = {percentage2:.2f}%")
+
+if R1 < R2:
+    print("Minimum path =", R1)
+    print(f"Most ants follow minimum path with {percentage1:.2f}% chance")
+elif R2 < R1:
+    print("Minimum path =", R2)
+    print(f"Most ants follow minimum path with {percentage2:.2f}% chance")
+else:
+    print("Both paths have equal probability")
